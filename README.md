@@ -13,7 +13,7 @@ Static one-page landing site. No build step — `index.html` is the whole site.
 
 - [ ] Swap the placeholder `mailto:hello@alekslaketa.com` once Proton Mail is wired up on the domain (marked `TODO`)
 - [x] Cloudflare DNS: `CNAME` record, name `www`, target `alekslaketa.com`, proxied — confirmed resolving via public DNS (1.1.1.1, 8.8.8.8, and Cloudflare's own authoritative NS)
-- [ ] Cloudflare Rules → Redirect Rules: 301 `www.alekslaketa.com/*` → `https://alekslaketa.com/$1` — **not working yet**: `https://www.alekslaketa.com` currently returns a Cloudflare **522** (origin connection timeout) instead of redirecting. The DNS record is fine; the redirect rule itself needs to be created/enabled/fixed so it fires before Cloudflare tries to reach an origin for that hostname.
+- [x] Cloudflare Rules → Redirect Rules: 301 `www.alekslaketa.com/*` → `https://alekslaketa.com/$1` (deployed via the "Redirect from WWW to root" template) — confirmed: `http://www` → 301 → `https://www` → 301 → `https://alekslaketa.com/` → 200
 - [ ] Cloudflare SSL/TLS → Overview: confirm encryption mode is Full (or Full strict), not Flexible — can't be verified from outside curl checks, only visible in the dashboard
 - [x] Cloudflare SSL/TLS → Edge Certificates: "Always Use HTTPS" — confirmed, `http://alekslaketa.com` now 301s to `https://alekslaketa.com/`
 - [ ] After deploy, re-scrape the OG preview via LinkedIn's [Post Inspector](https://www.linkedin.com/post-inspector/) so the cached preview isn't stale/blank the first time the link is shared
