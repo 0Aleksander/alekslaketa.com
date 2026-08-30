@@ -11,7 +11,7 @@ Static one-page landing site. No build step — `index.html` is the whole site.
 
 ## To-dos before this is "real"
 
-- [ ] Swap the placeholder `mailto:hello@alekslaketa.com` once Proton Mail is wired up on the domain (marked `TODO`)
+- [x] `mailto:hello@alekslaketa.com` — live on Proton Mail (Unlimited plan). MX, SPF, DKIM (3x CNAME), and DMARC records confirmed resolving correctly on Cloudflare; end-to-end send/receive verified against Gmail.
 - [x] Cloudflare DNS: `CNAME` record, name `www`, target `alekslaketa.com`, proxied — confirmed resolving via public DNS (1.1.1.1, 8.8.8.8, and Cloudflare's own authoritative NS)
 - [x] Cloudflare Rules → Redirect Rules: 301 `www.alekslaketa.com/*` → `https://alekslaketa.com/$1` (deployed via the "Redirect from WWW to root" template) — confirmed: `http://www` → 301 → `https://www` → 301 → `https://alekslaketa.com/` → 200
 - [x] Cloudflare SSL/TLS → Overview: encryption mode is Full
