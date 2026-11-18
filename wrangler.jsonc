@@ -1,0 +1,8 @@
+// Cloudflare Worker that serves this repo as static files (no Worker code).
+{
+  "name": "alekslaketa-com",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "."
+  }
+}
