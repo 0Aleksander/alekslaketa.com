@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aleks Laketa · salons</title>
+<meta name="description" content="I make sure you don&#x27;t have to answer messages between clients and in the evening. Instagram and WhatsApp messages and calls come together in one place, and an assistant prepares answers to the simple questions: prices, opening hours, free slots.">
+<link rel="canonical" href="https://alekslaketa.com/en/saloni/">
+<link rel="alternate" hreflang="en" href="https://alekslaketa.com/en/saloni/">
+<link rel="alternate" hreflang="sl" href="https://alekslaketa.com/sl/saloni/">
+<link rel="alternate" hreflang="x-default" href="https://alekslaketa.com/sl/saloni/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aleks Laketa · salons">
+<meta property="og:description" content="I make sure you don&#x27;t have to answer messages between clients and in the evening. Instagram and WhatsApp messages and calls come together in one place, and an assistant prepares answers to the simple questions: prices, opening hours, free slots.">
+<meta property="og:url" content="https://alekslaketa.com/en/saloni/">
+<meta property="og:image" content="https://alekslaketa.com/assets/og-en.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..700&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<style>
+/* Layout: Hermes Agent structure (framed one-colour hero, centred section, paper feature grid, FAQ, tier pricing, ghost wordmark), softened: rounded pills and panels, a friendly grotesque in sentence case, photos shown whole and in their own colour. */
+:root{
+  --ink:#051712;     /* brand forest */
+  --ink2:#0b3326;    /* raised green */
+  --ink3:#103f2f;    /* hover / track */
+  --paper:#F1EEE6;   /* light sections */
+  --cream:#F6F3EA;   /* text on green */
+  --gold:#EFB94A;    /* brand accent */
+  --mut:#7c8a8a;     /* brand muted */
+  --rule:rgba(5,23,18,.16);
+  --display:"Archivo","Avenir Next Condensed","Avenir Next",system-ui,sans-serif;
+  --body:"Hanken Grotesk","Avenir Next",system-ui,sans-serif;
+  --r:6px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--cream);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%;height:auto}
+p{margin:0}
+h1,h2,h3{margin:0;font-family:var(--display);font-stretch:82%;letter-spacing:-.02em;text-wrap:balance}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:clamp(16px,4vw,32px)}
+.label{font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.ic{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.photo{border-radius:var(--r);width:100%}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:4px;font-family:var(--body);font-weight:600;font-size:15px;line-height:1;border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:#f6cb6e}
+.btn-ghost{background:rgba(246,243,234,.1);color:var(--cream)}
+.btn-ghost:hover{background:rgba(246,243,234,.18)}
+.btn-line{border-color:rgba(5,23,18,.55);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn-dark{background:var(--ink);color:var(--paper)}
+.btn-dark:hover{background:var(--ink3)}
+
+/* hero */
+.hero{border:4px solid var(--ink2)}
+nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:32px;padding-block:26px 8px}
+nav .side{display:flex;align-items:center;gap:6px}
+nav .side.r{justify-content:flex-end}
+nav .side.r .btn{margin-left:10px}
+nav .side a:not(.btn){font-size:15px;color:rgba(246,243,234,.82);padding:6px 10px;border-radius:4px;transition:background .2s}
+nav .side a:not(.btn):hover{background:rgba(246,243,234,.08);color:var(--cream)}
+.mark{display:flex;align-items:center;gap:10px;font-family:var(--display);font-stretch:80%;font-weight:600;font-size:19px;line-height:.95;letter-spacing:-.01em;text-transform:uppercase}
+.mark svg{width:30px;height:30px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,60px);align-items:center;padding-block:56px 72px}
+.hero-grid>div{min-width:0}
+.hero h1{font-size:clamp(54px,7.8vw,108px);line-height:.94;font-weight:600;font-stretch:78%}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .lead{margin-top:24px;max-width:40ch;color:rgba(246,243,234,.82);font-size:18px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:8px 14px 8px 10px;border-radius:4px;background:var(--ink2);font-size:14px;color:rgba(246,243,234,.9)}
+.chip .ic{width:18px;height:18px;color:var(--gold)}
+.chip-arrow{align-self:center;color:var(--mut)}
+.hero figure{margin:0}
+.hero figcaption{margin-top:10px;font-size:13px;color:rgba(246,243,234,.6)}
+
+/* flow widget */
+.flow{padding-block:clamp(72px,10vw,120px) 24px;text-align:center}
+.flow h2,.report h2{font-size:clamp(40px,5.6vw,64px);font-weight:500;line-height:1.02}
+.flow .sub,.report .sub{margin-top:12px;color:rgba(246,243,234,.75)}
+.widget{position:relative;margin:44px auto 0;max-width:920px;background:var(--ink2);border-radius:8px;padding:clamp(22px,4vw,40px);text-align:left}
+.track{position:absolute;left:16.6%;right:16.6%;top:calc(clamp(22px,4vw,40px) + 44px);height:2px;background:var(--ink3);border-radius:2px}
+.track .fill{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--gold);border-radius:2px;transition:width .9s ease}
+.track .dot{position:absolute;top:50%;left:0;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 6px rgba(239,185,74,.18);transition:left .9s ease}
+.stages{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.stage{display:grid;justify-items:center;gap:14px;text-align:center;min-width:0}
+.bubble-ic{width:88px;height:88px;border-radius:8px;display:grid;place-items:center;background:var(--ink);border:1.5px solid var(--ink3);color:rgba(246,243,234,.5);transition:background .4s,color .4s,border-color .4s,transform .4s}
+.bubble-ic .ic{width:36px;height:36px;stroke-width:1.5}
+.stage.on .bubble-ic{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.stage.done .bubble-ic{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.stage.ring .bubble-ic{animation:ring .6s ease-in-out 2}
+@keyframes ring{0%,100%{transform:rotate(0)}20%{transform:rotate(-12deg)}40%{transform:rotate(10deg)}60%{transform:rotate(-8deg)}80%{transform:rotate(6deg)}}
+.stage .t{font-family:var(--display);font-stretch:82%;font-weight:500;font-size:22px;font-variant-numeric:tabular-nums;color:rgba(246,243,234,.55);transition:color .4s}
+.stage.on .t,.stage.done .t{color:var(--cream)}
+.stage h3{font-size:19px;font-weight:500;letter-spacing:-.01em}
+.stage .card{width:100%;max-width:260px;min-height:96px;border-radius:6px;background:var(--ink);padding:14px;font-size:14px;line-height:1.45;color:rgba(246,243,234,.85);opacity:.35;transform:translateY(6px);transition:opacity .5s,transform .5s;text-align:left}
+.stage.on .card,.stage.done .card{opacity:1;transform:none}
+.card .row{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.card .miss{color:#f0a08d;font-weight:600}
+.card u{color:var(--gold);text-underline-offset:3px}
+.card .slot{margin-top:6px;padding:7px 10px;border-radius:4px;background:var(--ink2);display:flex;justify-content:space-between;font-size:13px}
+.card .slot.new{background:var(--ink3);transition:background .4s,color .4s}
+.stage.done .card .slot.new{background:var(--gold);color:var(--ink);font-weight:600}
+.typing{display:inline-flex;gap:4px}
+.typing i{width:6px;height:6px;border-radius:50%;background:rgba(246,243,234,.6);animation:blink 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+.widget .status{margin-top:26px;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;padding-top:18px;border-top:1px solid var(--ink3);font-size:14px;color:rgba(246,243,234,.8)}
+.widget .status b{color:var(--gold);font-weight:600}
+.replay{background:transparent;border:1.5px solid var(--ink3);color:var(--cream);padding:8px 14px;border-radius:4px;font:600 13px var(--body);cursor:pointer}
+.replay:hover{background:var(--ink3)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* report */
+.report{text-align:center;padding-block:clamp(72px,10vw,110px)}
+.report .ico{width:48px;height:48px;margin:0 auto 16px;border-radius:6px;background:var(--ink2);display:grid;place-items:center;color:var(--gold)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.scard{border-radius:var(--r);background:var(--ink2);padding:28px 20px;display:grid;justify-items:center;gap:10px}
+.scard .ic{width:26px;height:26px;color:rgba(246,243,234,.7)}
+.scard .k{font-size:14px;color:rgba(246,243,234,.85)}
+.scard .big{font-family:var(--display);font-stretch:82%;font-weight:400;font-size:60px;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.scard.gold .big{color:var(--gold)}
+.scard .pill{font-size:12.5px;font-weight:600;background:rgba(246,243,234,.12);padding:5px 12px;border-radius:4px}
+.report .foot{margin-top:16px;color:rgba(246,243,234,.72);font-size:14px}
+
+/* paper */
+.paper{background:var(--paper);color:var(--ink)}
+.paper .wrap{padding-block:clamp(72px,10vw,120px)}
+.paper.rounded{border-radius:0}
+.sec-title{font-size:clamp(48px,6.4vw,80px);font-weight:500;line-height:1;font-stretch:78%}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 28px;margin-top:44px}
+.feat{display:flex;flex-direction:column;gap:12px;min-width:0}
+.feat .head{display:flex;align-items:center;gap:10px}
+.feat .badge{width:36px;height:36px;border-radius:6px;background:var(--ink);color:var(--gold);display:grid;place-items:center}
+.feat .badge .ic{width:18px;height:18px}
+.feat .num{font-size:13px;font-weight:600;color:#3b5249}
+.feat h3{font-size:28px;font-weight:500;line-height:1.1}
+.feat p{font-size:16px;color:#2a3d35}
+.panel{margin-top:auto;aspect-ratio:1/1;background:var(--ink);color:var(--cream);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:12px}
+.panel .meta{display:flex;justify-content:space-between;font-size:12.5px;color:rgba(246,243,234,.75)}
+.panel .lines{display:grid;gap:6px;font-size:13.5px}
+.panel .lines div{display:flex;justify-content:space-between;gap:10px;padding:9px 12px;background:var(--ink2);border-radius:4px}
+.panel .lines .miss{color:#f0a08d}
+.panel .lines .gold{background:var(--gold);color:var(--ink);font-weight:600}
+.panel .lines .no{color:rgba(246,243,234,.45);text-decoration:line-through;background:transparent}
+.panel .msg{background:var(--ink2);padding:12px 14px;font-size:15px;line-height:1.45;border-radius:6px 6px 6px 2px}
+.panel .msg u{color:var(--gold);text-underline-offset:3px}
+.panel .one{font-family:var(--display);font-stretch:82%;font-weight:400;font-size:clamp(120px,14vw,170px);line-height:.8;color:var(--gold);text-align:center}
+.tick{color:var(--gold);font-weight:700}
+
+/* about */
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,64px);align-items:start}
+.about>div{min-width:0}
+.about figure{margin:0}
+.about figcaption,.band figcaption{margin-top:10px;font-size:13px;color:#4a5d55}
+.about .body{display:grid;gap:14px;margin-top:22px;max-width:52ch;color:#2a3d35}
+.facts{margin-top:28px;display:grid;gap:8px}
+.facts div{display:flex;align-items:center;gap:12px;padding:12px 16px;background:#e6e2d7;border-radius:4px;font-size:15px}
+.facts .ic{color:var(--ink)}
+
+/* band */
+.band{padding-block:clamp(56px,8vw,96px)}
+.band figure{margin:0}
+.band figcaption{color:rgba(246,243,234,.6)}
+.band blockquote{margin:32px 0 0;max-width:30ch}
+.band blockquote p{font-family:var(--display);font-stretch:82%;font-weight:400;font-size:clamp(32px,4.6vw,56px);line-height:1.05;letter-spacing:-.025em}
+.band blockquote p em{font-style:normal;color:var(--gold)}
+.band cite{display:block;margin-top:14px;font-style:normal;font-size:14px;color:rgba(246,243,234,.7)}
+
+/* faq */
+.faq-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding-bottom:14px}
+details{border-top:1px solid var(--rule)}
+details:last-child{border-bottom:1px solid var(--rule)}
+summary{list-style:none;font-stretch:82%;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:20px 0;cursor:pointer;font-family:var(--display);font-weight:400;font-size:clamp(20px,2.4vw,25px);line-height:1.2;letter-spacing:-.015em}
+summary::-webkit-details-marker{display:none}
+summary .pm{width:32px;height:32px;border-radius:4px;background:#e6e2d7;display:grid;place-items:center;flex:none;transition:transform .25s}
+details[open] summary .pm{transform:rotate(45deg)}
+details p{padding:0 0 22px;max-width:64ch;color:#2a3d35}
+
+/* pricing */
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{border:1.5px solid rgba(5,23,18,.4);padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600}
+.price-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-top:18px}
+.price-head p{max-width:46ch;margin-top:14px;color:#2a3d35}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.tier{display:flex;flex-direction:column;gap:6px;padding:26px;border-radius:8px;background:#e8e4d9;min-width:0}
+.tier.hi{background:var(--ink);color:var(--cream)}
+.tier .top{display:flex;gap:10px;align-items:center;font-weight:600}
+.tier .top i{font-style:normal;font-size:12px;font-weight:600;background:var(--gold);color:var(--ink);padding:3px 10px;border-radius:3px;margin-left:auto}
+.tier .amt{font-family:var(--display);font-stretch:82%;font-weight:400;font-size:clamp(40px,4.4vw,52px);line-height:1.1;letter-spacing:-.03em;margin-top:8px;font-variant-numeric:tabular-nums}
+.tier .per{font-size:14px;color:#4a5d55}
+.tier.hi .per{color:rgba(246,243,234,.75)}
+.tier ul{list-style:none;padding:0;margin:18px 0 24px;display:grid;gap:9px;font-size:15px}
+.tier li{display:grid;grid-template-columns:20px 1fr;gap:8px;align-items:start}
+.tier li .ic{width:18px;height:18px;margin-top:3px;color:#3b5249}
+.tier.hi li .ic{color:var(--gold)}
+.tier .btn{align-self:flex-start;margin-top:auto}
+.small-note{margin-top:20px;font-size:14px;color:#4a5d55}
+
+/* footer */
+.foot{position:relative;overflow:hidden;padding-top:40px}
+.ghost{font-family:var(--display);font-weight:600;font-stretch:75%;font-size:clamp(120px,27vw,360px);line-height:.8;text-align:center;color:rgba(5,23,18,.06);letter-spacing:-.05em;user-select:none;margin-bottom:-.2em}
+.foot-row{position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:20px;padding-block:20px 28px;font-size:14px}
+.foot-row .r{text-align:right}
+.foot-row .mail{user-select:all;font-weight:600}
+.foot-row svg{width:40px;height:40px}
+.bar{height:14px;background:var(--ink)}
+
+@media (max-width:420px){nav .btn .ic{display:none}nav .btn{padding:10px 14px}}
+@media (max-width:860px){
+  nav{grid-template-columns:1fr auto}
+  nav .side.l{display:none}
+  nav .side.r a:not(.btn){display:none}
+  .mark{order:-1}
+  .hero-grid,.about{grid-template-columns:1fr}
+  .cards,.feats,.tiers{grid-template-columns:1fr}
+  .stages{grid-template-columns:1fr;gap:28px}
+  .track{display:none}
+  .stage{grid-template-columns:auto 1fr;justify-items:start;text-align:left;column-gap:16px;row-gap:8px}
+  .stage .bubble-ic{grid-row:span 3;width:64px;height:64px}
+  .stage .bubble-ic .ic{width:28px;height:28px}
+  .stage .card{max-width:none}
+  .panel{aspect-ratio:auto;min-height:260px}
+  .foot-row{grid-template-columns:1fr;justify-items:start}
+  .foot-row .r{text-align:left}
+}
+
+/* v8 additions: language toggle, longer headline, review markers, contact tiers */
+body:not(.en) .t-en{display:none!important}
+body.en .t-sl{display:none!important}
+.hero h1.long{font-size:clamp(44px,6.2vw,88px);line-height:.98}
+.langbtn{all:unset;cursor:pointer;font-size:13px;font-weight:600;letter-spacing:.06em;padding:6px 10px;border-radius:4px;color:rgba(246,243,234,.82);border:1px solid var(--ink3);margin-left:6px}
+.langbtn:hover{background:rgba(246,243,234,.08)}
+.langbtn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.ph{outline:1.5px dashed var(--gold);outline-offset:6px;border-radius:2px}
+.scard .k{font-size:17px;color:var(--cream)}
+.step-p{font-size:15px;color:rgba(246,243,234,.75);max-width:28ch;margin:0 auto}
+.eng{margin-top:22px;font-size:14px;color:#4a5d55}
+.eng a{text-decoration:underline;text-underline-offset:3px;color:var(--ink)}
+.tier .amt{overflow-wrap:anywhere}
+@media (max-width:860px){nav .side.r .langbtn{display:inline-block}}
+.feats.two{grid-template-columns:repeat(2,1fr)}
+@media (max-width:860px){.feats.two{grid-template-columns:1fr}}
+.why{padding-block:clamp(48px,7vw,88px) 0}
+.why blockquote{margin:0 auto;max-width:34ch;text-align:center}
+.why blockquote p{font-size:clamp(24px,3.2vw,38px);line-height:1.18}
+.why cite{margin-top:18px}
+.tel{font-family:var(--display);font-stretch:82%;font-size:24px;margin-top:4px;user-select:all}
+.tel a{color:inherit}
+.segs{margin-top:22px;font-size:15px;color:#2a3d35}
+.segs a{text-decoration:underline;text-underline-offset:3px;color:var(--ink);font-weight:600}
+.cred{margin-top:18px;font-size:14px;color:rgba(246,243,234,.6)}
+
+/* v8.1 (18 Nov): the example plays as you scroll, and reverses when you scroll back up */
+.flow.js .stage .t,.flow.js .stage h3,.flow.js .stage .card{transition:opacity .5s ease,transform .5s ease,color .4s}
+.flow.js .stage.pending .t,.flow.js .stage.pending h3,.flow.js .stage.pending .card{opacity:0;transform:translateY(24px)}
+.flow.js .track .fill,.flow.js .track .dot{transition:width .15s linear,left .15s linear}
+@media (min-width:861px) and (min-height:760px) and (prefers-reduced-motion:no-preference){
+  .flow.js{padding-block:0}
+  .flow.js .flow-scroll{height:300vh}
+  .flow.js .flow-pin{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center}
+}
+@media (max-width:860px){nav .side.r a.langbtn{display:inline-block}}
+</style>
+</head>
+<body>
+
+
+</head>
+<body class="en">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-missed" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M16 2l6 6M22 2l-6 6"/></symbol>
+    <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></symbol>
+    <symbol id="i-euro" viewBox="0 0 24 24"><path d="M18 6.5A7 7 0 1 0 18 17.5"/><path d="M4 10h9M4 14h9"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4"/></symbol>
+    <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/></symbol>
+    <symbol id="i-logo" viewBox="0 0 400 400"><path d="M31.06,322.17c-1.11,0-2.22-.35-3.17-1.07-2.3-1.75-2.74-5.04-.99-7.34L216.94,64.4c1.75-2.3,5.04-2.74,7.34-.99,2.3,1.750,2.74,5.04.99,7.34L35.23,320.11c-1.03,1.35-2.59,2.06-4.17,2.06Z"/><path d="M273.83,259.08c-2.89,0-5.24-2.34-5.24-5.24V105.02c0-2.89,2.34-5.24,5.24-5.24s5.24,2.34,5.24,5.24v148.83c0,2.89-2.34,5.24-5.24,5.24Z"/><path d="M313.08,259.08h-38.44c-2.89,0-5.24-2.34-5.24-5.24s2.34-5.24,5.24-5.24h38.44c2.89,0,5.24,2.34,5.24,5.24s-2.34,5.24-5.24,5.24Z"/><path d="M221.1,208.81h-67.03c-2.89,0-5.24-2.34-5.24-5.24s2.34-5.24,5.24-5.24h67.03c2.89,0,5.24,2.34,5.24,5.24s-2.34,5.24-5.24,5.24Z"/><path d="M222.09,322.17c-2.89,0-5.24-2.34-5.24-5.24v-113.36c0-2.89,2.34-5.24,5.24-5.24s5.24,2.34,5.24,5.24v113.36c0,2.89-2.34,5.24-5.24,5.24Z"/><path d="M368.94,322.16h-145.87c-2.89,0-5.24-2.34-5.24-5.24s2.34-5.24,5.24-5.24h145.87c2.89,0,5.24,2.34,5.24,5.24s-2.34,5.24-5.24,5.24Z"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3 6 1.5 1.5L7 5M3 12l1.5 1.5L7 11M3 18l1.5 1.5L7 17"/></symbol>
+    <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M3 13h5l2 3h4l2-3h5"/><path d="M5 5h14l2 8v6H3v-6z"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+  </defs>
+</svg>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <nav>
+      <div class="side l">
+        <a href="#kako"><span class="t-sl">Kako delava</span><span class="t-en">How I work</span></a>
+        <a href="#kaj"><span class="t-sl">Kaj uredim</span><span class="t-en">What I set up</span></a>
+        <a href="#o-meni"><span class="t-sl">O meni</span><span class="t-en">About</span></a>
+      </div>
+      <a class="mark" href="/en/" aria-label="Aleks Laketa"><svg viewBox="0 0 400 400" fill="#F6F3EA" aria-hidden="true"><use href="#i-logo"/></svg><span>Aleks<br>Laketa</span></a>
+      <div class="side r">
+        <a href="#vprasanja"><span class="t-sl">Vprašanja</span><span class="t-en">Questions</span></a>
+        <a class="langbtn" id="langbtn" href="/sl/saloni/" hreflang="sl" lang="sl" aria-label="Slovenščina"><span class="t-sl">EN</span><span class="t-en">SL</span></a>
+        <a class="btn btn-gold" href="#kontakt"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span class="t-sl">Pogovoriva se</span><span class="t-en">Let's talk</span></a>
+      </div>
+    </nav>
+
+    <div class="hero-grid">
+      <div>
+        <h1 class="long"><span class="t-sl">Pomagam ljudem, ki morajo <em>vse delati sami.</em></span><span class="t-en">I help people who have to <em>do everything themselves.</em></span></h1>
+        <p class="lead"><span class="t-sl">Poskrbim, da vam med strankami in zvečer ni treba več odgovarjati na sporočila. Sporočila z Instagrama in WhatsAppa ter klici se zberejo na enem mestu, asistent pa pripravi odgovore na preprosta vprašanja: cenik, delovni čas, prosti termini.</span><span class="t-en">I make sure you don't have to answer messages between clients and in the evening. Instagram and WhatsApp messages and calls come together in one place, and an assistant prepares answers to the simple questions: prices, opening hours, free slots.</span></p>
+        <div class="ctas">
+          <a class="btn btn-gold" href="https://cal.com/alekslaketa/15min" target="_blank" rel="noopener"><span class="t-sl">Kratek klic, 15 minut</span><span class="t-en">Short call, 15 minutes</span></a>
+          <a class="btn btn-ghost" href="https://cal.com/alekslaketa/coffee" target="_blank" rel="noopener"><span class="t-sl">Na Goriškem se dobiva tudi na kavi</span><span class="t-en">Around Gorica, coffee too</span></a>
+        </div>
+        <p class="cred"><span class="t-sl">Po poklicu sem sistemski inženir: skrbim za sisteme, ki ne smejo odpovedati.</span><span class="t-en">I'm a systems engineer by trade: I look after systems that must not fail.</span></p>
+        <div class="chips">
+          <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-msg"/></svg><span class="t-sl">Sporočilo ob 21.47</span><span class="t-en">A message at 21:47</span></span>
+          <span class="chip-arrow" aria-hidden="true">→</span>
+          <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><span class="t-sl">Odgovor v minuti</span><span class="t-en">Answered in a minute</span></span>
+          <span class="chip-arrow" aria-hidden="true">→</span>
+          <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg><span class="t-sl">Seznam ob 8.00</span><span class="t-en">Your list at 8:00</span></span>
+        </div>
+      </div>
+      <figure>
+        <img class="photo" src="/assets/helping.jpg" width="1099" height="1374" alt="Aleksander Laketa leaning over to help at a laptop during a workshop">
+        <figcaption>Aleksander Laketa</figcaption>
+      </figure>
+    </div>
+  </div>
+</header>
+
+<section class="flow" id="primer">
+<div class="flow-scroll"><div class="flow-pin">
+  <div class="wrap">
+    <h2><span class="t-sl">Kaj se zgodi, ko že spite?</span><span class="t-en">What happens while you're asleep?</span></h2>
+    <p class="sub"><span class="t-sl">Na primer: asistent odgovarja tako, kot bi odgovorili vi, in samo na vprašanja, ki mu jih dovolite.</span><span class="t-en">An example. The assistant answers the way you would, and only what you allow.</span></p>
+    <div class="widget" id="widget">
+      <div class="track" aria-hidden="true"><div class="fill" id="fill"></div><div class="dot" id="dot"></div></div>
+      <div class="stages">
+        <div class="stage" data-s="0">
+          <div class="bubble-ic"><svg class="ic" aria-hidden="true"><use href="#i-msg"/></svg></div>
+          <span class="t">21.47</span>
+          <h3><span class="t-sl">Stranka vam piše na Instagramu</span><span class="t-en">A client writes on Instagram</span></h3>
+          <div class="card"><div class="row"><span>Maja</span><span class="miss">Instagram</span></div><div style="margin-top:8px"><span class="t-sl">Imate kaj prostega v petek popoldne za gel lak?</span><span class="t-en">Do you have anything free on Friday afternoon for gel nails?</span></div></div>
+        </div>
+        <div class="stage" data-s="1">
+          <div class="bubble-ic"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></div>
+          <span class="t">21.48</span>
+          <h3><span class="t-sl">Asistent odgovori</span><span class="t-en">The assistant answers</span></h3>
+          <div class="card" id="replycard"><span class="typing" aria-hidden="true"><i></i><i></i><i></i></span></div>
+        </div>
+        <div class="stage" data-s="2">
+          <div class="bubble-ic"><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg></div>
+          <span class="t">8.00</span>
+          <h3><span class="t-sl">Vaš jutranji seznam</span><span class="t-en">Your morning list</span></h3>
+          <div class="card"><div class="row" style="color:rgba(246,243,234,.65)"><span class="t-sl">Torek</span><span class="t-en">Tuesday</span><span class="t-sl">čaka na vas</span><span class="t-en">waiting for you</span></div><div class="slot"><span>Ana · <span class="t-sl">prestavitev termina</span><span class="t-en">moving her appointment</span></span><span class="t-sl">potrdite</span><span class="t-en">approve</span></div><div class="slot new"><span>Maja · <span class="t-sl">petek 16.30</span><span class="t-en">Friday 16:30</span></span><span class="t-sl">potrdite termin</span><span class="t-en">confirm slot</span></div></div>
+        </div>
+      </div>
+      <div class="status"><span id="status" aria-live="polite"></span></div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="band why" id="zakaj">
+  <div class="wrap">
+    <blockquote>
+      <p><span class="t-sl">Dolgo sem od blizu gledal človeka, ki je vse delal sam. Stalo ga je zdravja in večerov z družino. Zaradi 53 e-sporočil nihče ne bi smel ostati <em>brez večerov z otroki in brez spanca.</em></span><span class="t-en">For a long time I watched someone up close do everything alone. It cost them their health and their evenings with family. Nobody should lose their kids' evenings <em>or their sleep over 53 emails.</em></span></p>
+      <cite>Aleksander</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section class="report" id="kako">
+  <div class="wrap">
+    <div class="ico"><svg class="ic" aria-hidden="true"><use href="#i-coffee"/></svg></div>
+    <h2><span class="t-sl">Kako delava</span><span class="t-en">How we work</span></h2>
+    <p class="sub"><span class="t-sl">Najprej vas poslušam, potem se lotim dela.</span><span class="t-en">First I listen, then I set it up.</span></p>
+    <div class="cards">
+      <div class="scard"><span class="big">1</span><span class="k"><b><span class="t-sl">Kratek klic ali kava</span><span class="t-en">A short call or coffee</span></b></span><p class="step-p"><span class="t-sl">Povejte, kje zdaj izgubljate čas in kaj vam uhaja.</span><span class="t-en">Tell me where you lose time today, or what slips.</span></p></div>
+      <div class="scard"><span class="big">2</span><span class="k"><b><span class="t-sl">Zemljevid</span><span class="t-en">A map</span></b></span><p class="step-p"><span class="t-sl">Narišem, kje imate kaj in kje se zatika. Če ne morem pomagati, vam to povem.</span><span class="t-en">I draw where you keep everything and where it gets stuck. If I can't help, I'll say so.</span></p></div>
+      <div class="scard gold"><span class="big">3</span><span class="k"><b><span class="t-sl">Postavim in vzdržujem</span><span class="t-en">I set it up and look after it</span></b></span><p class="step-p"><span class="t-sl">Prvi teden asistent piše samo osnutke, vi pa jih potrjujete. Če ne zveni kot vi, ga ugasneva. Potem vsak mesec preverim, ali vse deluje.</span><span class="t-en">The first week the assistant only writes drafts, and you approve them. If it doesn't sound like you, we switch it off. After that I check every month that everything works.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="paper rounded" id="kaj">
+  <div class="wrap">
+    <h2 class="sec-title"><span class="t-sl">Kaj uredim</span><span class="t-en">What I set up</span></h2>
+    <div class="feats two">
+      <div class="feat">
+        <div class="head"><span class="badge"><svg class="ic" aria-hidden="true"><use href="#i-inbox"/></svg></span><span class="num">#1</span></div>
+        <h3><span class="t-sl">Vse na enem mestu</span><span class="t-en">Everything in one place</span></h3>
+        <p><span class="t-sl">Sporočila z Instagrama in WhatsAppa, klici in e-pošta se zberejo na enem mestu, namesto da so raztresena po petih aplikacijah.</span><span class="t-en">Instagram and WhatsApp messages, calls and email come together in one place, instead of being scattered across five apps.</span></p>
+        <div class="panel"><div class="meta"><span class="t-sl">En seznam</span><span class="t-en">One list</span><span class="t-sl">danes</span><span class="t-en">today</span></div><div class="lines"><div><span>Instagram · Maja</span><span class="t-sl">termin</span><span class="t-en">appointment</span></div><div><span>WhatsApp · Ana</span><span class="t-sl">prestavitev</span><span class="t-en">reschedule</span></div><div class="miss"><span>Klic · 040 5•• •12</span><span class="t-sl">zgrešen</span><span class="t-en">missed</span></div><div class="gold"><span>Instagram · Lea</span><span class="t-sl">novo</span><span class="t-en">new</span></div></div><div class="meta"><span class="t-sl">3 kanali</span><span class="t-en">3 channels</span><span class="t-sl">1 seznam</span><span class="t-en">1 list</span></div></div>
+      </div>
+      <div class="feat">
+        <div class="head"><span class="badge"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></span><span class="num">#2</span></div>
+        <h3><span class="t-sl">Asistent ne pozabi ničesar</span><span class="t-en">An assistant that doesn't forget</span></h3>
+        <p><span class="t-sl">Opomni vas na prestavitve in odpovedi ter vam vsak teden pove, kaj še čaka.</span><span class="t-en">It reminds you of reschedules and cancellations and tells you every week what's still waiting.</span></p>
+        <div class="panel"><div class="meta"><span class="t-sl">Ta teden še čaka</span><span class="t-en">Open this week</span><span class="t-sl">petek</span><span class="t-en">Friday</span></div><div class="lines"><div class="miss"><span>Lea · <span class="t-sl">odpoved</span><span class="t-en">cancellation</span></span><span class="t-sl">čaka dva dni</span><span class="t-en">2 days waiting</span></div><div><span>Maja · <span class="t-sl">petek 16.30</span><span class="t-en">Friday 16:30</span></span><span class="tick">✓</span></div><div><span>Ana · <span class="t-sl">prestavitev</span><span class="t-en">reschedule</span></span><span class="tick">✓</span></div><div class="no"><span><span class="t-sl">Pozabljeno sporočilo</span><span class="t-en">Forgotten message</span></span><span>0</span></div></div><div class="meta"><span class="t-sl">1 čaka</span><span class="t-en">1 open</span><span class="t-sl">2 urejeni</span><span class="t-en">2 closed</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="paper rounded" id="o-meni">
+  <div class="wrap">
+    <div class="about">
+      <figure>
+        <img class="photo" src="/assets/p30.jpg" width="900" height="1350" alt="Aleks Laketa at the lectern during the talk">
+        <figcaption>Hamburg, <span class="t-sl">september 2026</span><span class="t-en">September 2026</span></figcaption>
+      </figure>
+      <div>
+        <h2 class="sec-title"><span class="t-sl">O meni</span><span class="t-en">About me</span></h2>
+        <div class="body">
+          <p><span class="t-sl">Sem Aleksander iz okolice Nove Gorice. Po poklicu skrbim za sisteme, ki ne smejo odpovedati.</span><span class="t-en">I'm Aleksander, from near Nova Gorica, an infrastructure engineer. Systems that aren't allowed to go down are my trade.</span></p>
+          <p><span class="t-sl">Delam sam, zato se od prvega klica naprej pogovarjate z mano, ne s prodajalcem. Pogosto je bolje imeti manj programov kot več, zato vam ne vsiljujem novega, ampak uredim tisto, kar že imate.</span><span class="t-en">I work on my own, so from the first call you talk to me, not a salesperson. Fewer programs usually beat more, so I don't bring you a new one, I sort out what you already have.</span></p>
+        </div>
+        <div class="facts">
+          <div><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><span class="t-sl">Po vsej Sloveniji po telefonu, na Goriškem tudi na kavi</span><span class="t-en">All of Slovenia by phone, coffee too around Gorica</span></div>
+          <div><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><span class="t-sl">Slovenščina, angleščina</span><span class="t-en">Slovenian, English</span></div>
+          <div><svg class="ic" aria-hidden="true"><use href="#i-mic"/></svg><span class="t-sl">Vodil sem delavnico na konferenci Bit Summit v Hamburgu (2026)</span><span class="t-en">Ran a workshop at Bit Summit in Hamburg (2026)</span></div>
+        </div>
+        <p class="eng"><span class="t-sl">Za inženirje: Kubernetes, delavnica v Hamburgu, diplomska naloga o obnovi sistema po izpadu regije v oblaku.</span><span class="t-en">For engineers: Kubernetes, the Hamburg workshop, a diploma on recovering a system after a cloud region fails.</span> <a href="https://github.com/0Aleksander" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/aleksander-laketa" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+    </div>
+
+    <div id="vprasanja" style="margin-top:clamp(72px,10vw,120px)">
+      <div class="faq-head"><h2 class="sec-title"><span class="t-sl">Vprašanja</span><span class="t-en">Questions</span></h2><a class="btn btn-line" href="#kontakt"><span class="t-sl">Pogovoriva se ↓</span><span class="t-en">Let's talk ↓</span></a></div>
+      <details><summary><span><span class="t-sl">Bo »robot« odgovarjal mojim strankam namesto mene?</span><span class="t-en">Will a robot answer my customers instead of me?</span></span><span class="pm"><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p><span class="t-sl">Asistent odgovarja samo na vprašanja, za katera ste mu dali odgovor: cenik, delovni čas, prosti termini, priprava na tretma. Prvi teden ne pošlje ničesar sam, samo pripravi osnutke. Ko ste zadovoljni, sme sam odgovarjati na vprašanja, ki ste jih odobrili. Vse drugo vedno počaka, da potrdite vi.</span><span class="t-en">Only questions you've given it an answer for: prices, opening hours, free slots, how to prepare for a treatment. The first week it sends nothing on its own, it only drafts. Once you're happy, it may answer the questions you've approved by itself. Everything else always waits for you.</span></p></details>
+      <details><summary><span><span class="t-sl">Kaj pa, če stranka vpraša o alergijah, koži ali nosečnosti?</span><span class="t-en">What if a client asks about allergies, skin or pregnancy?</span></span><span class="pm"><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p><span class="t-sl">Takrat asistent ne ugiba. Stranki napiše, da ji boste odgovorili osebno, vprašanje pa pride na vrh vašega seznama.</span><span class="t-en">Then the assistant doesn't guess. It tells the client you'll answer personally, and the question goes to the top of your list.</span></p></details>
+      <details><summary><span><span class="t-sl">Se bom moral naučiti nov program?</span><span class="t-en">Do I have to learn a new program?</span></span><span class="pm"><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p><span class="t-sl">Ne. Nič zapletenega se vam ni treba učiti: na telefon dobite en seznam in odgovore potrdite kar tam.</span><span class="t-en">No. You get one list on your phone and approve answers right there.</span></p></details>
+      <details><summary><span><span class="t-sl">Kje so podatki mojih strank?</span><span class="t-en">Where is my customers' data?</span></span><span class="pm"><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p><span class="t-sl">Ostanejo vaši in so shranjeni v EU. Pred začetkom podpiševa pogodbo o obdelavi osebnih podatkov, na vašo željo pa podatke izbrišem.</span><span class="t-en">It stays yours and is stored in the EU. Before we start we sign a data processing agreement, and I delete it whenever you ask.</span></p></details>
+      <details><summary><span><span class="t-sl">Kaj pa, če me nekoč ne bo več?</span><span class="t-en">What if you're not around?</span></span><span class="pm"><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p><span class="t-sl">Vse postavim na vaše uporabniške račune in zapišem, kako deluje. Če nehava sodelovati, vse ostane vaše in deluje naprej.</span><span class="t-en">I set everything up on your own accounts and write down how it works. If we stop working together, it all stays yours and keeps running.</span></p></details>
+      <details><summary><span><span class="t-sl">Ali moram zamenjati orodja, ki jih že uporabljam?</span><span class="t-en">Do I have to switch the tools I already use?</span></span><span class="pm"><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p><span class="t-sl">Ni nujno. Najprej pogledava, kaj že uporabljate, in pogosto je dovolj, da to povežem.</span><span class="t-en">Not necessarily. First we look at what you already use, and often it's enough for me to connect it.</span></p></details>
+      <details><summary><span><span class="t-sl">Koliko stane?</span><span class="t-en">How much does it cost?</span></span><span class="pm"><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p><span class="t-sl">Enkrat plačate postavitev, potem mesečno vzdrževanje. Znesek je odvisen od tega, koliko kanalov poveževa, zato ga ne povem na pamet. Ko vidim, kaj imate, vam ceno pošljem pisno, preden kar koli začnem, in potem se odločite vi. Prvi pogovor ne stane nič.</span><span class="t-en">You pay once for the setup, then a monthly fee for upkeep. The amount depends on how many channels we connect, so I don't guess it. Once I've seen what you have, I send you the price in writing before I start anything, and then you decide. The first call costs nothing.</span></p></details>
+      <details><summary><span><span class="t-sl">Kaj pa, če mi ne morete pomagati?</span><span class="t-en">What if you can't help me?</span></span><span class="pm"><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p><span class="t-sl">To vam povem že v prvem pogovoru.</span><span class="t-en">I'll tell you on the first call.</span></p></details>
+      <details><summary><span><span class="t-sl">Delate samo na Goriškem?</span><span class="t-en">Do you only work around Gorica?</span></span><span class="pm"><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></span></summary><p><span class="t-sl">Ne. Kjer koli v Sloveniji se slišiva po telefonu ali prek videoklica, na Goriškem pa se dobiva tudi na kavi.</span><span class="t-en">No. Anywhere in Slovenia we talk by phone or video call, and around Gorica I'll come for coffee too.</span></p></details>
+    </div>
+  </div>
+</section>
+
+<section class="paper" id="kontakt" style="border-top:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="price-head">
+      <div>
+        <h2 class="sec-title"><span class="t-sl">Pogovoriva se</span><span class="t-en">Let's talk</span></h2>
+        <p><span class="t-sl">Izberite, kar vam bolj ustreza. Za pogovor se vam ni treba pripraviti. Povejte mi samo, kaj vas ta hip najbolj teži.</span><span class="t-en">Pick whatever suits you. No preparation needed, just bring what's bothering you most right now.</span></p>
+      </div>
+    </div>
+    <p class="segs"><span class="t-sl">Primeri za:</span><span class="t-en">Examples for:</span> <a href="/en/obrtniki/"><span class="t-sl">obrtnike</span><span class="t-en">tradespeople</span></a> · <a href="/en/saloni/"><span class="t-sl">salone</span><span class="t-en">salons</span></a> · <a href="/en/trgovine/"><span class="t-sl">spletne trgovine</span><span class="t-en">webshops</span></a></p>
+    <div class="tiers">
+      <div class="tier hi">
+        <div class="top"><span class="t-sl">Kratek klic</span><span class="t-en">Short call</span><i><span class="t-sl">vsa Slovenija</span><span class="t-en">all of Slovenia</span></i></div>
+        <div class="amt">15 min</div>
+        <div class="per"><span class="t-sl">po telefonu ali prek videoklica</span><span class="t-en">by phone or video call</span></div>
+        <ul><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span class="t-sl">Brez priprave</span><span class="t-en">No preparation</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span class="t-sl">Če ne morem pomagati, vam povem</span><span class="t-en">If I can't help, I'll say so</span></li></ul>
+        <a class="btn btn-gold" href="https://cal.com/alekslaketa/15min" target="_blank" rel="noopener"><span class="t-sl">Izberite termin</span><span class="t-en">Pick a time</span></a>
+      </div>
+      <div class="tier">
+        <div class="top"><span class="t-sl">Kava</span><span class="t-en">Coffee</span></div>
+        <div class="amt">30 min</div>
+        <div class="per"><span class="t-sl">v kavarni Maks v Novi Gorici</span><span class="t-en">at the Maks bookshop café in Nova Gorica</span></div>
+        <ul><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span class="t-sl">Kava gre na moj račun</span><span class="t-en">Coffee's on me</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span class="t-sl">Za Goriško</span><span class="t-en">For the Gorica area</span></li></ul>
+        <a class="btn btn-line" href="https://cal.com/alekslaketa/coffee" target="_blank" rel="noopener"><span class="t-sl">Dogovoriva se za kavo</span><span class="t-en">Book a coffee</span></a>
+      </div>
+      <div class="tier">
+        <div class="top"><span class="t-sl">E-pošta ali telefon</span><span class="t-en">Email or phone</span></div>
+        <div class="amt" style="font-size:clamp(24px,2.6vw,30px)">hello@<wbr>alekslaketa.com</div>
+        <div class="per"><span class="t-sl">odgovorim isti dan</span><span class="t-en">I reply the same day</span></div>
+        <ul><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span class="t-sl">Napišite v enem stavku, kaj vas teži</span><span class="t-en">Write in one sentence what's bothering you</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span class="t-sl">Če ne dvignem, vas še isti dan pokličem</span><span class="t-en">If I don't pick up, I call you back the same day</span></li></ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div class="ghost" aria-hidden="true">Laketa</div>
+    <div class="wrap foot-row">
+      <div><span class="t-sl">Za ljudi, ki morajo vse delati sami.</span><span class="t-en">For people who have to do everything themselves.</span><br>© 2026 Aleksander Laketa</div>
+      <svg viewBox="0 0 400 400" fill="#051712" aria-hidden="true"><use href="#i-logo"/></svg>
+      <div class="r">Nova Gorica · <span class="t-sl">Slovenija</span><span class="t-en">Slovenia</span><br><span class="mail">hello@alekslaketa.com</span> · <span class="mail"></span></div>
+    </div>
+    <div class="bar"></div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var body=document.body;
+  function lang(){return body.classList.contains('en')?'en':'sl';}
+  function setLang(l){body.classList.toggle('en',l==='en');document.documentElement.lang=l; if(window.__flow)window.__flow.refresh();}
+  var start='en';
+  setLang(start);
+
+  var stages=[].slice.call(document.querySelectorAll('.stage'));
+  var fill=document.getElementById('fill'),dot=document.getElementById('dot');
+  var status=document.getElementById('status'),reply=document.getElementById('replycard');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var T={
+    sl:{reply:"Pozdravljeni! V petek imam prosto ob 16.30 ali 17.15. Katera ura vam bolj ustreza?",
+        msgs:["Stranka vam piše ob 21.47. Vi že spite.", "Asistent odgovori v minuti, ker ste mu cenik in proste termine že odobrili. Vse drugo počaka na vas.", "<b>Zjutraj</b> vidite, kaj čaka na vas. Nič vam ni ušlo."]},
+    en:{reply:"Hi! On Friday I have 16:30 or 17:15 free. Which time suits you better?",
+        msgs:["A client writes at 21:47. You're already asleep.", "The assistant answers within a minute, because you already approved prices and free slots. Everything else waits for you.", "<b>In the morning</b> you see what's waiting. Nothing slipped."]}
+  };
+  var TYPING='<span class="typing" aria-hidden="true"><i></i><i></i><i></i></span>';
+  T.sl.hint='Pomaknite se navzdol in poglejte, kaj se zgodi.';
+  T.en.hint='Scroll down to see what happens.';
+  var sec=document.getElementById('primer'),sc=sec.querySelector('.flow-scroll');
+  var pinMQ=window.matchMedia('(min-width:861px) and (min-height:760px) and (prefers-reduced-motion:no-preference)');
+  sec.classList.add('js');
+  var key='',prev=-1,step=-1;
+  function clamp(v){return v<0?0:v>1?1:v;}
+  function render(s,typing,pct){
+    fill.style.width=pct+'%';dot.style.left=pct+'%';
+    var k=s+'|'+typing+'|'+lang();
+    if(k===key)return;key=k;step=s;
+    stages.forEach(function(el,i){
+      el.classList.toggle('pending',i>s);
+      el.classList.toggle('on',i===s&&s<2);
+      el.classList.toggle('done',i<s||(i===s&&s===2));
+      el.classList.remove('ring');
+    });
+    if(s===0&&prev<0&&!reduce){void stages[0].offsetWidth;stages[0].classList.add('ring');}
+    prev=s;
+    reply.innerHTML=(s>=1&&!typing)?T[lang()].reply:TYPING;
+    status.innerHTML=s<0?T[lang()].hint:T[lang()].msgs[s];
+  }
+  function update(){
+    if(reduce){render(2,false,100);return;}
+    var vh=window.innerHeight;
+    if(pinMQ.matches){
+      var r=sc.getBoundingClientRect(),p=clamp(-r.top/Math.max(1,r.height-vh));
+      var s=p<.08?-1:p<.38?0:p<.68?1:2;
+      render(s,s===1&&p<.5,clamp((p-.08)/.6)*100);
+    }else{
+      var s2=-1;
+      stages.forEach(function(el,i){if(el.getBoundingClientRect().top<vh*.75)s2=i;});
+      render(s2,s2===1&&stages[1].getBoundingClientRect().top>vh*.5,s2<=0?0:s2*50);
+    }
+  }
+  var ticking=false;
+  function onScroll(){if(!ticking){ticking=true;requestAnimationFrame(function(){ticking=false;update();});}}
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll);
+  if(pinMQ.addEventListener)pinMQ.addEventListener('change',onScroll);
+  window.__flow={refresh:function(){key='';update();}};
+  update();
+})();
+</script>
+
+</body>
+</html>
+</body>
+</html>
